@@ -17,7 +17,7 @@ In the project directory, you can run:
 2.  Navigate to the cloned directory:
 
     ```console
-    $ cd portfolio
+    $ cd Portfolio
     ```
 
 3.  Install dependencies:
