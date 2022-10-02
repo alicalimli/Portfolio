@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,5 +29,10 @@ In the project directory, you can run:
 4.  Run the project
 
     ```console
-    $ npm run dev
+    $ npm start
     ```
+
+# Websites
+
+- Main Branch: [https://gleaming-marshmallow-fb9096.netlify.app/](https://gleaming-marshmallow-fb9096.netlify.app/)
+- Working Branch: [https://frabjous-jalebi-ee8d05.netlify.app/](https://frabjous-jalebi-ee8d05.netlify.app/)
