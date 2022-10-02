@@ -68,7 +68,7 @@ const Header = () => {
                     <h2 ref={job}>Front-End Developer</h2>
                     <br />
                     <p ref={about}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit molestiae perspiciatis quibusdam, optio est repellat odio esse voluptas commodi, minima numquam expedita, adipisci asperiores nostrum. Dolor nisi voluptatum cupiditate!
+                        it is just for testing, you can write about yourself here. Wish you all the best...
                     </p>
                 </div>
                 <div className='headerImg' ref={imgIntro}>
