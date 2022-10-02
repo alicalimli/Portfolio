@@ -11,13 +11,13 @@ In the project directory, you can run:
 1.  Clone the repo:
 
     ```console
-    $ git clone git@github.com:FrancescoXX/4c-site.git
+    $ git clone https://github.com/AliReza1083/Portfolio.git
     ```
 
 2.  Navigate to the cloned directory:
 
     ```console
-    $ cd 4c-site
+    $ cd portfolio
     ```
 
 3.  Install dependencies:
