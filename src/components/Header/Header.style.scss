@@ -16,6 +16,11 @@ header {
         @media (min-width: 1453px ) {
             max-width: 1453px;
         }
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+            gap: 1em;
+        }
+
 
         .headerInfo {
             display: flex;
@@ -43,6 +48,28 @@ header {
                 opacity: 0;
                 transform: translateY(50px) rotate(-5deg);
             }
+
+            @media (max-width: 992px) {
+                h1 {
+                    font-size: 5em;
+                }
+
+            }
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 3em;
+                }
+                h2 {
+                    font-size: 1em;
+                    line-height: 0;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            @media (max-width: 576px) {
+
+            }
         }
     
         .headerImg {
@@ -55,6 +82,16 @@ header {
             img {
                 width: 70%;
             }
+
+            @media (max-width: 576px) {
+                img {
+                    width: 100%;
+                }
+            }
         }
+    }
+
+    @media (max-width: 576px) {
+        padding: 0 1em;
     }
 }

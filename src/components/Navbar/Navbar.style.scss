@@ -84,4 +84,8 @@ nav {
             }
         }
     }
+
+    @media (max-width: 576px) {
+        padding: 1em 1em;
+    }
 }
