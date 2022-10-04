@@ -42,6 +42,12 @@ nav {
             list-style: none;
             display: flex;
             gap: 3em;
+
+            .x-menu {
+                position: absolute;
+                top: 1em;
+                right: 1em;
+            }
     
             li {
 
@@ -115,11 +121,14 @@ nav {
                 }
             }
 
+            @media (max-width: 765px) {
+                transition: .3s;
+            }
             @media (max-width: 576px) {
                 width: 100%;
             }
         }
-        .nav-list-show {
+        ul[data-toggle='true'] {
             transition: .3s;
             transform: translateX(0);
         }
@@ -133,6 +142,9 @@ nav {
         top: 1em;
 
         .ham-menu {
+            display: none;
+        }
+        .x-menu {
             display: none;
         }
     }
