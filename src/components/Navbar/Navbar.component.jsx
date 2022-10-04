@@ -32,6 +32,12 @@ const Navbar = () => {
         }
     })
 
+
+    const navListShow = () => {
+        const navList = document.querySelector('nav ul')
+        navList.classList.add('nav-list-show')
+    }
+
     return (
         <nav className='paddingSize' ref={navbar}>
             <div>
@@ -42,7 +48,7 @@ const Navbar = () => {
                     <li><Link to="#" className='nav-link'>project</Link></li>
                     <li><Link to="#" className='nav-link'>contact</Link></li>
                 </ul>
-                <HamMenu className='ham-menu' />
+                <HamMenu className='ham-menu' onClick={navListShow} />
             </div>
         </nav>
     )
