@@ -6,6 +6,7 @@ import './Navbar.style.scss'
 // images
 import logo from '../../assets/logo.png'
 import { ReactComponent as About } from '../../assets/file-earmark-person.svg'
+import { ReactComponent as HamMenu } from '../../assets/list.svg'
 import { useRef, useEffect } from 'react'
 
 const Navbar = () => {
@@ -16,9 +17,20 @@ const Navbar = () => {
         gsap.to(navbar.current, {
             scale: 1,
             opacity: 1,
+            delay: .2,
             duration: 1.5
         })
     }, [])
+
+    window.addEventListener('scroll', (e) => {
+        const navbarChange = document.querySelector('nav > div');
+        const scrollValue = window.scrollY;
+        if (scrollValue >= 50) {
+            navbarChange.classList.add('nav-active')
+        } else {
+            navbarChange.classList.remove('nav-active')
+        }
+    })
 
     return (
         <nav className='paddingSize' ref={navbar}>
@@ -30,6 +42,7 @@ const Navbar = () => {
                     <li><Link to="#" className='nav-link'>project</Link></li>
                     <li><Link to="#" className='nav-link'>contact</Link></li>
                 </ul>
+                <HamMenu className='ham-menu' />
             </div>
         </nav>
     )

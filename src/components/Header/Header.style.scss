@@ -28,6 +28,8 @@ header {
             align-items: flex-start;
 
             h1 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
                 line-height: 1;
                 font-size: 6em;
                 background: linear-gradient(45deg, #2840B6, #167EC9);
@@ -68,7 +70,9 @@ header {
                 }
             }
             @media (max-width: 576px) {
-
+                h1 {
+                    font-weight: 800;
+                }
             }
         }
     
