@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
+import 'boxicons'
 
 import './Navbar.style.scss'
 
 // images
 import logo from '../../assets/logo.png'
 import { ReactComponent as About } from '../../assets/file-earmark-person.svg'
+import { ReactComponent as Story } from '../../assets/hourglass-split.svg'
+import { ReactComponent as Project } from '../../assets/cast.svg'
+import { ReactComponent as Contact } from '../../assets/bxs-contact.svg'
 import { ReactComponent as HamMenu } from '../../assets/list.svg'
 import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
 import { useRef, useEffect } from 'react'
@@ -51,10 +55,10 @@ const Navbar = () => {
                 <img src={logo} alt="" />
                 <ul data-toggle="false">
                     <XMenu className='x-menu' onClick={navListShow} />
-                    <li><Link to="/" className='nav-link'><About className='nav-svg-link' />about</Link></li>
-                    <li><Link to="/story" className='nav-link'>story</Link></li>
-                    <li><Link to="#" className='nav-link'>project</Link></li>
-                    <li><Link to="#" className='nav-link'>contact</Link></li>
+                    <li><Link to="/" className='nav-link'><About className='nav-svg-link' /> about</Link></li>
+                    <li><Link to="#" className='nav-link'><Project className='nav-svg-link' /> project</Link></li>
+                    <li><Link to="/" className='nav-link'><Story className='nav-svg-link' /> story</Link></li>
+                    <li><Link to="#" className='nav-link'><Contact className='nav-svg-link' /> contact</Link></li>
                 </ul>
                 <HamMenu className='ham-menu' onClick={navListShow} />
             </div>
