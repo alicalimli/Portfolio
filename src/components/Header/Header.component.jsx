@@ -7,7 +7,8 @@ import './Header.style.scss';
 import HeaderImg from '../../assets/header img 2.png'
 
 import BackgroundGradient from '../Background Gradient/bgGradient.component'
-import Loading from '../LoadingPage/Loading.component';
+import Loading from '../LoadingPage/Loading.component'
+import Constructor from '../Constuction/Constuction.component';
 
 const Header = () => {
 
@@ -59,6 +60,7 @@ const Header = () => {
         <header>
             {/* <Loading /> */}
             <BackgroundGradient />
+            <Constructor />
             <div className='container'>
                 <div className='headerInfo'>
                     {/* <code className='htmlText'>&lt;Name&gt;</code> */}
