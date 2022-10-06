@@ -5,14 +5,9 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: rgba(255, 255, 255, 0.704);
-    // backdrop-filter: blur(10px);
     z-index: 2;
     display: flex;
     justify-content: center;
-    // transform: scale(3);
-    // opacity: 0;
-    outline: red 1px solid;
 
     div {
         display: flex;
@@ -20,7 +15,6 @@ nav {
         align-items: center;
         height: 100%;
         width: 100%;
-        outline: green 1px solid;
 
         @media (min-width: 1453px ) {
             max-width: 1453px;

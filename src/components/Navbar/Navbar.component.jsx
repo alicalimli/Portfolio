@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom'
-import { gsap } from 'gsap'
-import 'boxicons'
 
 import './Navbar.style.scss'
 
@@ -12,20 +10,8 @@ import { ReactComponent as Project } from '../../assets/cast.svg'
 import { ReactComponent as Contact } from '../../assets/bxs-contact.svg'
 import { ReactComponent as HamMenu } from '../../assets/list.svg'
 import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
-import { useRef, useEffect } from 'react'
 
 const Navbar = () => {
-
-    const navbar = useRef()
-
-    useEffect(() => {
-        gsap.to(navbar.current, {
-            scale: 1,
-            opacity: 1,
-            delay: .2,
-            duration: 1.5
-        })
-    }, [])
 
     window.addEventListener('scroll', (e) => {
         const navbarChange = document.querySelector('nav > div');
@@ -50,7 +36,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='paddingSize' ref={navbar}>
+        <nav className='paddingSize'>
             <div>
                 <img src={logo} alt="" />
                 <ul data-toggle="false">
