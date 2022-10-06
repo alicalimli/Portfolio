@@ -13,17 +13,6 @@ import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
 
 const Navbar = () => {
 
-    window.addEventListener('scroll', (e) => {
-        const navbarChange = document.querySelector('nav > div');
-        const scrollValue = window.scrollY;
-        if (scrollValue >= 50) {
-            navbarChange.classList.add('nav-active')
-        } else {
-            navbarChange.classList.remove('nav-active')
-        }
-    })
-
-
     const navListShow = () => {
         const navList = document.querySelector('nav ul')
         const ulAttribute = navList.getAttribute('data-toggle') 
