@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 
 import Header from "../components/Header/Header.component"
+import Project from "../components/Project/Project.component"
 
 const Portfolio = () => {
 
@@ -13,6 +14,7 @@ const Portfolio = () => {
     return (
         <Fragment>
             <Header data={ information } />
+            <Project />
         </Fragment>
     )
 }

@@ -35,12 +35,25 @@ header {
                 background: linear-gradient(45deg, #2840B6, #167EC9);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                background-size: 300%;
+                background-position: right;
                 opacity: 0;
                 transform: translateY(-100px) rotate(-5deg);
+                animation: nameAnimation 1s infinite alternate;
+
+                @keyframes nameAnimation {
+                    from {
+                        background-position: right;
+                    } 
+                    to {
+                        background-position: left;
+                        background-size: 100%;
+                    }
+                }
             }
 
             h2 {
-                color: #2840B6;
+                color: var(--primary-color);
                 line-height: 1;
                 opacity: 0;
                 transform: translateX(-100px) rotate(-5deg);

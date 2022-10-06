@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primary-color: #2840B6;
+  --secondary: #167EC9;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   body {
     font-family: 'Poppins', sans-serif;
