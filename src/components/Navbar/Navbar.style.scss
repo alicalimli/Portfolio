@@ -8,6 +8,7 @@ nav {
     z-index: 2;
     display: flex;
     justify-content: center;
+    background-color: white;
 
     div {
         display: flex;
@@ -37,6 +38,7 @@ nav {
         ul {
             list-style: none;
             display: flex;
+            height: 25.2px;
             gap: 3em;
 
             .x-menu {
@@ -148,8 +150,6 @@ nav {
     // }
 
     @media (min-width: 768px) {
-        top: 1em;
-
         .ham-menu {
             display: none;
         }
@@ -163,6 +163,7 @@ nav {
     }
     @media (max-width: 576px) {
         padding: 1em 1em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.078);
     }
 }
 

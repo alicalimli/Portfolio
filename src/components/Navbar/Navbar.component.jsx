@@ -36,7 +36,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='paddingSize'>
+        <nav>
             <div>
                 <img src={logo} alt="" />
                 <ul data-toggle="false">
