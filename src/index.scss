@@ -10,29 +10,27 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
 
-  body {
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
-  
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  .htmlText {
-    color: rgba(0, 0, 0, 0.688);
-    font-size: 13px;
-  }
+
+
+.htmlText {
+  color: rgba(0, 0, 0, 0.688);
+  font-size: 13px;
 }
