@@ -16,7 +16,7 @@ import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
 const Navbar = () => {
 
     const navListShow = () => {
-        const navList = document.querySelector('nav ul')
+        const navList = document.querySelector('nav > div > div')
         const ulAttribute = navList.getAttribute('data-toggle') 
         // navList.classList.add('nav-list-show')
         if (ulAttribute == 'false') {
@@ -30,14 +30,16 @@ const Navbar = () => {
         <nav>
             <div>
                 <img src={logo} alt="" />
-                <ul data-toggle="false">
-                    {/* <XMenu className='x-menu' onClick={navListShow} /> */}
-                    <li><a href="#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
-                    <li><a href="#project" className='nav-link'><Project className='nav-svg-link' /> project</a></li>
-                    <li><a href="#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
-                    <li><Link to="#" className='nav-link'><Contact className='nav-svg-link' /> contact</Link></li>
-                    {/* <small>Designed By <i>Ali Reza</i></small> */}
-                </ul>
+                <div onClick={navListShow}>
+                    <ul data-toggle="false">
+                        {/* <XMenu className='x-menu' onClick={navListShow} /> */}
+                        <li><a href="#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
+                        <li><a href="#project" className='nav-link'><Project className='nav-svg-link' /> project</a></li>
+                        <li><a href="#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
+                        <li><Link to="#" className='nav-link'><Contact className='nav-svg-link' /> contact</Link></li>
+                        {/* <small>Designed By <i>Ali Reza</i></small> */}
+                    </ul>
+                </div>
                 <HamMenu className='ham-menu' onClick={navListShow} />
             </div>
         </nav>
