@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
-// import './Navbar.style.scss'
-import './testing.scss'
+import './Navbar.style.scss'
+// import './testing.scss'
 // import './testing2.css'
 
 // images
@@ -15,14 +16,17 @@ import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
 
 const Navbar = () => {
 
+    const [dataToggle, setDataToggle] = useState('false')
+
     const navListShow = () => {
         const navList = document.querySelector('nav > div > div')
-        const ulAttribute = navList.getAttribute('data-toggle') 
         // navList.classList.add('nav-list-show')
-        if (ulAttribute == 'false') {
+        if (dataToggle == 'false') {
             navList.setAttribute('data-toggle', 'true')
-        } else {
+            setDataToggle('true')
+        } else if (dataToggle == 'true') {
             navList.setAttribute('data-toggle', 'false')
+            setDataToggle('false')
         }
     }
 
@@ -31,7 +35,7 @@ const Navbar = () => {
             <div>
                 <img src={logo} alt="" />
                 <div onClick={navListShow}>
-                    <ul data-toggle="false">
+                    <ul data-toggle={dataToggle}>
                         {/* <XMenu className='x-menu' onClick={navListShow} /> */}
                         <li><a href="#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
                         <li><a href="#project" className='nav-link'><Project className='nav-svg-link' /> project</a></li>
