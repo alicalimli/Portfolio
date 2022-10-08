@@ -1,0 +1,21 @@
+.project-1 {
+    display: flex;
+    align-items: center;
+
+    div {
+        border-radius: 1em;
+    }
+
+    div:nth-child(1) {
+        background-color: #D9D9D9;
+        flex: 1 1 auto;
+        padding: 1em;
+        border-radius: 1em 0 0 1em;
+    }
+
+    img {
+        width: 400px;
+        border-radius: 1em;
+        object-fit: cover;
+    }
+}
