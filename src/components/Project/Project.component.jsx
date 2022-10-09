@@ -20,7 +20,7 @@ const Project = () => {
 
     const data = [
         ['HTML', 'CSS', 'NODEJS', 'ExpressJS', 'EJS'],
-        ['HTML', 'CSS', 'NODEJS', 'ExpressJS', 'EJS']
+        ['HTML', 'CSS', 'NODEJS', 'ExpressJS', 'EJS', 'EJS', 'EJS', 'EJS', 'EJS', 'EJS']
     ]
 
 

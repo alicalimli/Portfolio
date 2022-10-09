@@ -3,6 +3,8 @@ import './Project1.style.scss'
 import Stack from '../Stacks/Stack.components'
 import Technology from '../Technology/Technology.component'
 
+import UltraMovies from '../../assets/Ultra Movies.png'
+
 const Project1 = ({data, technology}) => {
 
 
@@ -15,7 +17,7 @@ const Project1 = ({data, technology}) => {
             </div>
             <div>
                 <Technology nameOfTechnology={technology} />
-                <img src="https://s3.us-west-1.amazonaws.com/screenshots.templatemonster.com/templates/6428/scr/01.jpg?width=1096" alt="" />
+                <img src={UltraMovies} alt="" />
             </div>
         </div>
     )

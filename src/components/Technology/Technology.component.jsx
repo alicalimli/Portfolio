@@ -1,8 +1,6 @@
-import './Technology.style.scss'
-
 const Technology = ({nameOfTechnology}) => {
     return (
-        <div className='technology'>
+        <div className={`technology`}>
             {nameOfTechnology}
         </div>
     )
