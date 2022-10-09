@@ -19,8 +19,8 @@ const Project = () => {
     }, [])
 
     const data = [
-        ['HTML', 'CSS', 'NODEJS', 'ExpressJS', 'EJS'],
-        ['HTML', 'CSS', 'NODEJS', 'ExpressJS', 'EJS', 'EJS', 'EJS', 'EJS', 'EJS', 'EJS']
+        ['HTML', 'CSS', 'JavaScript', 'NODEJS', 'ExpressJS', 'EJS'],
+        ['HTML', 'CSS', 'NODEJS', 'ExpressJS', 'EJS', 'Tailwind']
     ]
 
 
@@ -29,7 +29,7 @@ const Project = () => {
             <h1>Project</h1>
             <div>
                 <Project1 data={data[0]} technology="NodeJS" />
-                <Project1 data={data[1]} technology="NodeJS" />
+                <Project1 data={data[1]} technology="ReactJS" />
             </div>
         </div>
     )

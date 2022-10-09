@@ -6,7 +6,7 @@ const Stack = ({Stacks}) => {
         <div className='stacks'>
             { Stacks.map(M => {
                 return (
-                    <p> { M } </p>
+                    <p className={M}> { M } </p>
                 )
             }) } 
         </div>

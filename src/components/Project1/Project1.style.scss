@@ -49,8 +49,6 @@
             transition: .3s;
         }
 
-        
-
         .technology {
             background-color: #CF9500;
             color: white;
@@ -62,6 +60,14 @@
             font-size: 14px;
             opacity: 0;
             transform: translateY(-10px);
+            transition: .2s;
+        }
+        .nodejs {
+            background-color: #3c873a;
+        }
+        .reactjs {
+            background-color: #61DBFB;
+            color: black;
         }
 
         img {

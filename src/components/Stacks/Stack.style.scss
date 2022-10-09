@@ -16,4 +16,26 @@
             transform: translateY(-2px);
         }
     }
+
+
+    .HTML {
+        background-color: var(--html-color);
+    }
+    .CSS {
+        background-color: var(--css-color);
+    }
+    .JavaScript {
+        background-color: var(--javascript-color);
+        color: var(--javascript-font-color);
+    }
+    .NODEJS {
+        background-color: var(--nodejs-color);
+    }
+    .Tailwind {
+        background-color: var(--tailwind-color);
+    }
+    .ExpressJS {
+        background-color: var(--expressjs-color);
+        color: var(--expressjs-font-color);
+    }
 }
