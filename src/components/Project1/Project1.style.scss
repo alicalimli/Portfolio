@@ -1,21 +1,65 @@
 .project-1 {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    transition: .3s;
 
-    div {
-        border-radius: 1em;
+    &:hover {
+        background-color: #ececec;
     }
 
-    div:nth-child(1) {
-        background-color: #D9D9D9;
-        flex: 1 1 auto;
-        padding: 1em;
-        border-radius: 1em 0 0 1em;
+    .information {
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+
+        h2 {
+            font-size: 18px;
+        }
+        & > p {
+            font-size: 14px;
+        }
+        
     }
 
-    img {
-        width: 400px;
-        border-radius: 1em;
-        object-fit: cover;
+    div:nth-child(2) {
+        position: relative;
+
+        .technology {
+            background-color: #CF9500;
+            color: white;
+            padding: .2em .5em;
+            border-radius: .4em;
+            position: absolute;
+            top: .5em;
+            right: .5em;
+            font-size: 14px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: .3s;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 1em;
+        }
+    }
+    
+    &:hover {
+        div:nth-child(2) {
+            .technology {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
     }
 }

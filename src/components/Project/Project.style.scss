@@ -3,7 +3,27 @@
     padding: 1em 2em;
     opacity: 0;
 
+    @media (min-width: 1453px ) {
+        max-width: 1453px;
+    }
+
     & > h1 {
         font-size: 48px;
+    }
+
+    & > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        margin-top: 1em;
+
+        @media (max-width: 1129px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    
+    @media (max-width: 576px) {
+        padding: 0 1em;
     }
 }

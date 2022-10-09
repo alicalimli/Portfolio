@@ -1,0 +1,19 @@
+.stacks {
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
+
+    p {
+        background-color: #1879C7;
+        padding: .2em .5em;
+        border-radius: .2em;
+        color: white;
+        font-size: 14px;
+        transition: .2s;
+
+        &:hover {
+            background-color: #1d81d3;
+            transform: translateY(-2px);
+        }
+    }
+}

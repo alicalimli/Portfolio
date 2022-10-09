@@ -59,7 +59,7 @@ const Header = ({ data }) => {
     return(
         <header id="about">
             {/* <Loading /> */}
-            <BackgroundGradient />
+            {/* <BackgroundGradient /> */}
             <div className='container'>
                 <div className='headerInfo'>
                     {/* <code className='htmlText'>&lt;Name&gt;</code> */}
