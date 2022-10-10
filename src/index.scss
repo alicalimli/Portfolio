@@ -17,6 +17,7 @@
   --expressjs-font-color: white;
   --ejs-color: #;
   --react-color : #;
+
 }
 
 * {
@@ -32,21 +33,42 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  .htmlText {
+    color: rgba(0, 0, 0, 0.688);
+    font-size: 13px;
+  }
+
+
+  .sectionTitle {
+    margin-top: 50px;
+    font-size: 48px;
+    color: var(--primary-color);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.368);
+    padding-bottom: 16px;
+  }
+
+  @media (max-width: 992px) {
+    .sectionTitle {
+      font-size: 36px;
+    }
+  }
+  @media (max-width: 576px) {
+    .sectionTitle {
+      font-size: 32px;
+    }
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-
-
-.htmlText {
-  color: rgba(0, 0, 0, 0.688);
-  font-size: 13px;
-}

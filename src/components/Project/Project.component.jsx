@@ -27,7 +27,7 @@ const Project = () => {
     return (
         <div id='project' ref={project}>
             <div>
-                <h1>Project</h1>
+                <h1 className="sectionTitle">Project</h1>
                 <div>
                     <Project1 data={projectData[0]} image={UltraMovies} />
                     <Project1 data={projectData[1]} image={WeatherAPI} />
