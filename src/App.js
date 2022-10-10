@@ -12,8 +12,8 @@ function App() {
     <Routes>
       <Route path="/" element={<NavbarRoute />}>
         <Route index element={<Portfolio />}></Route>
-        <Route path="project/:id" element={<UltraMovie />} ></Route>
       </Route>
+      <Route path="project/:id" element={<UltraMovie />} ></Route>
     </Routes>
   );
 }

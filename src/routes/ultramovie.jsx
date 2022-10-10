@@ -19,6 +19,10 @@ const UltraMovie = () => {
 
     return (
         <div className="eachProject">
+            <div className="bannerImg">
+                <img src={foundData.img} alt="" />
+                <div></div>
+            </div>
             <img src={foundData.img} alt="" />
             <h1> { foundData.name } </h1>
             <p> { foundData.description } </p>
