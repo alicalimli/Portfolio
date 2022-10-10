@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Ultra Movie",
+        "stacks": ["HTML", "CSS", "JavaScript", "NODEJS", "ExpressJS", "EJS"],
+        "technology": "NodeJS",
+        "description": "This Website is all about Downloading Movie, but it's fake, I just made it for practising. The tools that I used to make this Full Responsive Website:"
+    },
+    {
+        "id": 2,
+        "name": "Weather API",
+        "stacks": ["HTML", "CSS", "JavaScript", "NODEJS", "ExpressJS", "EJS"],
+        "technology": "NodeJS",
+        "description": "This is the website where You can check the weather of the most Cities."
+    }
+]

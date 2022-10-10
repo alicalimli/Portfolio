@@ -1,10 +1,10 @@
 import './Stack.style.scss'
 
-const Stack = ({Stacks}) => {
+const Stack = ({stacks}) => {
 
     return (
         <div className='stacks'>
-            { Stacks.map(M => {
+            { stacks.map(M => {
                 return (
                     <p className={M}> { M } </p>
                 )

@@ -1,6 +1,7 @@
 .project-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
     gap: 1em;
     background-color: #f2f2f2;
     padding: 1em;

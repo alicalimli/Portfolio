@@ -4,19 +4,20 @@ import Stack from '../Stacks/Stack.components'
 import Technology from '../Technology/Technology.component'
 
 
-const Project1 = ({data, technology, description, img}) => {
+const Project1 = ({data, image}) => {
 
+    const { name, stacks, technology, description } = data;
 
     return (
         <div className='project-1'>
             <div className='information'>
-                <h2>Ultra Movies</h2>
+                <h2> { name } </h2>
                 <p> { description } </p>
-                <Stack Stacks={data} />
+                <Stack stacks={stacks} />
             </div>
             <div>
                 <Technology nameOfTechnology={technology} />
-                <img src={img} alt="" />
+                <img src={image} alt="" />
             </div>
         </div>
     )
