@@ -64,11 +64,14 @@
             transition: .2s;
         }
         .nodejs {
-            background-color: #3c873a;
+            background-color: var(--nodejs-color);
         }
         .reactjs {
-            background-color: #61DBFB;
+            background-color: var(--react-color);
             color: black;
+        }
+        .html {
+            background-color: var(--html-color);
         }
 
         img {

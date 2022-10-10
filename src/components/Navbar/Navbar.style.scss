@@ -56,9 +56,29 @@ nav {
                         text-transform: capitalize;
                         transition: .3s;
                         font-weight: 600;
+                        position: relative;
         
                         .nav-svg-link {
                             transition: .3s;
+                        }
+
+                        span {
+                            color: white;
+                            background-color: blue;
+                            position: absolute;
+                            top: -50%;
+                            right: 0;
+                            transform: translateX(100%);
+                            width: 20px;
+                            height: 20px;
+                            text-align: center;
+                            line-height: 1.2;
+                            border-radius: .2em;
+
+                            @media (max-width:768px) {
+                                top: 50%;
+                                transform: translateX(-100%) translateY(-50%);
+                            }
                         }
         
                         @media (min-width: 768px) {

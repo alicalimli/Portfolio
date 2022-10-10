@@ -14,9 +14,13 @@ import { ReactComponent as Contact } from '../../assets/bxs-contact.svg'
 import { ReactComponent as HamMenu } from '../../assets/list.svg'
 import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
 
+import ProjectData from '../../context/Project.data.json'
+
+
 const Navbar = () => {
 
     const [dataToggle, setDataToggle] = useState('false')
+    const [ projectData, setProjectData ] = useState(ProjectData);
 
     const navListShow = () => {
         const navList = document.querySelector('nav > div > div')
@@ -38,7 +42,7 @@ const Navbar = () => {
                     <ul data-toggle={dataToggle}>
                         {/* <XMenu className='x-menu' onClick={navListShow} /> */}
                         <li><a href="/#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
-                        <li><a href="/#project" className='nav-link'><Project className='nav-svg-link' /> project</a></li>
+                        <li><a href="/#project" className='nav-link'><Project className='nav-svg-link' /> project <span>{ projectData.length }</span> </a></li>
                         <li><a href="/#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
                         <li><Link to="#" className='nav-link'><Contact className='nav-svg-link' /> contact</Link></li>
                         {/* <small>Designed By <i>Ali Reza</i></small> */}

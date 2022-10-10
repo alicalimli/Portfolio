@@ -9,7 +9,7 @@
         "description": "This Website is all about Downloading Movie, but it's fake, I just made it for practising. The tools that I used to make this Full Responsive Website:",
         "img": "https://i.ibb.co/PYTZPzR/Ultra-Movies.png",
         "github": "https://github.com/AliReza1083/UltraMovie",
-        "website": "https://github.com/AliReza1083/UltraMovie"
+        "website": null
     },
     {
         "id": 2,
@@ -25,14 +25,14 @@
     },
     {
         "id": 3,
-        "params": "testing",
-        "name": "Weather API",
+        "params": "ultra-nft",
+        "name": "Ultra NFT",
         "stacks": ["HTML", "CSS", "JavaScript"],
-        "technology": "ReactJS",
-        "path": "/project/testing",
+        "technology": "HTML",
+        "path": "/project/ultra-nft",
         "description": "This is the website where You can check the weather of the most Cities.",
-        "img": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
-        "github": "https://github.com/AliReza1083/Weather-Api",
-        "website": null
+        "img": "https://i.ibb.co/cLHT2x5/Ultra-NFT.png",
+        "github": "https://github.com/AliReza1083/Ultra-NFT",
+        "website": "https://alireza1083.github.io/Ultra-NFT/"
     }
 ]
