@@ -43,4 +43,3 @@ In the project directory, you can run:
 # Websites
 
 - Main Branch: [https://gleaming-marshmallow-fb9096.netlify.app/](https://gleaming-marshmallow-fb9096.netlify.app/)
-- Working Branch: [https://frabjous-jalebi-ee8d05.netlify.app/](https://frabjous-jalebi-ee8d05.netlify.app/)
