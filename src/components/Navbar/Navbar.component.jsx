@@ -33,13 +33,13 @@ const Navbar = () => {
     return (
         <nav>
             <div>
-                <img src={logo} alt="" />
+                <Link to='/' className='logoImg'><img src={logo} alt="" /></Link>
                 <div onClick={navListShow}>
                     <ul data-toggle={dataToggle}>
                         {/* <XMenu className='x-menu' onClick={navListShow} /> */}
-                        <li><a href="#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
-                        <li><a href="#project" className='nav-link'><Project className='nav-svg-link' /> project</a></li>
-                        <li><a href="#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
+                        <li><a href="/#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
+                        <li><a href="/#project" className='nav-link'><Project className='nav-svg-link' /> project</a></li>
+                        <li><a href="/#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
                         <li><Link to="#" className='nav-link'><Contact className='nav-svg-link' /> contact</Link></li>
                         {/* <small>Designed By <i>Ali Reza</i></small> */}
                     </ul>

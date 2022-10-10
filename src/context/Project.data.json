@@ -1,16 +1,22 @@
 [
     {
         "id": 1,
+        "params": "ultramovie",
         "name": "Ultra Movie",
         "stacks": ["HTML", "CSS", "JavaScript", "NODEJS", "ExpressJS", "EJS"],
         "technology": "NodeJS",
-        "description": "This Website is all about Downloading Movie, but it's fake, I just made it for practising. The tools that I used to make this Full Responsive Website:"
+        "path": "/project/ultramovie",
+        "description": "This Website is all about Downloading Movie, but it's fake, I just made it for practising. The tools that I used to make this Full Responsive Website:",
+        "img": "https://i.ibb.co/PYTZPzR/Ultra-Movies.png"
     },
     {
         "id": 2,
+        "params": "weatherapi",
         "name": "Weather API",
         "stacks": ["HTML", "CSS", "JavaScript", "NODEJS", "ExpressJS", "EJS"],
         "technology": "NodeJS",
-        "description": "This is the website where You can check the weather of the most Cities."
+        "path": "/project/weatherapi",
+        "description": "This is the website where You can check the weather of the most Cities.",
+        "img": "https://i.ibb.co/frGHLwG/Weather-API.png"
     }
 ]

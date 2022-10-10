@@ -1,0 +1,20 @@
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    border: none;
+    padding: .5em 1em;
+    color: var(--light-dark-color);
+    border-radius: .2em;
+    font-size: 14px;
+    margin: 1.5em 0 1em;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
