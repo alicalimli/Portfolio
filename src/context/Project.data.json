@@ -7,7 +7,9 @@
         "technology": "NodeJS",
         "path": "/project/ultramovie",
         "description": "This Website is all about Downloading Movie, but it's fake, I just made it for practising. The tools that I used to make this Full Responsive Website:",
-        "img": "https://i.ibb.co/PYTZPzR/Ultra-Movies.png"
+        "img": "https://i.ibb.co/PYTZPzR/Ultra-Movies.png",
+        "github": "https://github.com/AliReza1083/UltraMovie",
+        "website": "https://github.com/AliReza1083/UltraMovie"
     },
     {
         "id": 2,
@@ -17,6 +19,8 @@
         "technology": "NodeJS",
         "path": "/project/weatherapi",
         "description": "This is the website where You can check the weather of the most Cities.",
-        "img": "https://i.ibb.co/frGHLwG/Weather-API.png"
+        "img": "https://i.ibb.co/frGHLwG/Weather-API.png",
+        "github": "https://github.com/AliReza1083/Weather-Api",
+        "website": null
     }
 ]

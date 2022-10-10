@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import './EachProject.style.scss';
-import EachProjectData from '../context/Project.data.json'
+import EachProjectData from '../../context/Project.data.json'
 
-const UltraMovie = () => {
+const EachProject = () => {
 
     const [ eachProjectData, setEachProjectData ] = useState(EachProjectData);
     const [ foundData, setFoundData ] = useState([])
@@ -26,8 +26,12 @@ const UltraMovie = () => {
             <img src={foundData.img} alt="" />
             <h1> { foundData.name } </h1>
             <p> { foundData.description } </p>
+            <div className="websites">
+                <a href={ foundData.github } target="_blank">Source</a>
+                { foundData.website != null ? <a href="#" target="_blank">Website</a> : '' }
+            </div>
         </div>
     )
 }
 
-export default UltraMovie
+export default EachProject

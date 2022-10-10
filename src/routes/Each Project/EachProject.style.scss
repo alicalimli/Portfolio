@@ -34,4 +34,21 @@
         max-width: 400px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.53);
     }
+
+    & > p {
+        margin: .5em 0 1em;
+    }
+
+    .websites {
+        display: flex;
+        gap: 1em;
+        
+        a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: .5em 1em;
+            border-radius: .3em;
+        }
+    }
 }
