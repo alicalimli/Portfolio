@@ -31,7 +31,7 @@ const EachProject = () => {
 
         tl.to(q('.loading'), {
             opacity: 0,
-            duration: 1
+            duration: 2
         })
         .to(q('.loading'), {
             display: "none",

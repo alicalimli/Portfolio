@@ -2,7 +2,7 @@ import './Project1.style.scss'
 
 import Stack from '../Stacks/Stack.components'
 import Technology from '../Technology/Technology.component'
-import Button from '../Button/Button.component'
+import Responsive from '../Responsive/Responsive.component'
 
 import { Link } from 'react-router-dom'
 
@@ -22,6 +22,7 @@ const Project1 = ({data, image}) => {
             </div>
             <div>
                 <Technology nameOfTechnology={technology} />
+                <Responsive />
                 <img src={image} alt="" />
             </div>
         </div>

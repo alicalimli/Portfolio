@@ -63,6 +63,7 @@ nav {
                         }
 
                         span {
+                            font-size: 14px;
                             color: white;
                             background-color: blue;
                             position: absolute;
@@ -74,6 +75,9 @@ nav {
                             text-align: center;
                             line-height: 1.2;
                             border-radius: .2em;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
 
                             @media (max-width:768px) {
                                 top: 50%;
@@ -179,8 +183,7 @@ nav {
                 position: fixed;
                 top: 0;
                 left: 0;
-                background-color: var(--nav-list-background-color);
-                backdrop-filter: blur(10px);
+                background-color: rgba(0, 0, 0, 0.459);
             }
         }
         & > div[data-toggle='true'] {

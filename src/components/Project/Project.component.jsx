@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from 'react'
 import UltraMovies from '../../assets/Ultra Movies.png'
 import WeatherAPI from '../../assets/Weather API.png'
 import UltraNFT from '../../assets/Ultra NFT.png'
+import Nike from '../../assets/Nike.png'
 
 import ProjectData from '../../context/Project.data.json'
 
@@ -31,8 +32,9 @@ const Project = () => {
                 <h1 className="sectionTitle">Project</h1>
                 <div>
                     <Project1 data={projectData[0]} image={UltraMovies} />
-                    <Project1 data={projectData[1]} image={WeatherAPI} />
                     <Project1 data={projectData[2]} image={UltraNFT} />
+                    <Project1 data={projectData[1]} image={WeatherAPI} />
+                    <Project1 data={projectData[3]} image={Nike} />
                 </div>
             </div>
         </div>
