@@ -56,6 +56,17 @@ const Header = ({ data }) => {
         })
     }, [])
 
+
+    const mouseEnter = () => {
+        const myImg = document.querySelector('#myImg');
+        myImg.style.transform = 'rotate(10deg) scale(1.1)'
+    }
+
+    const mouseLeave = () => {
+        const myImg = document.querySelector('#myImg');
+        myImg.style.transform = 'rotate(0deg) scale(1)'
+    }
+
     return(
         <header id="about">
             {/* <Loading /> */}
@@ -63,7 +74,7 @@ const Header = ({ data }) => {
             <div className='container'>
                 <div className='headerInfo'>
                     {/* <code className='htmlText'>&lt;Name&gt;</code> */}
-                    <h1 ref={nameAnimation}> { name } </h1>
+                    <h1 ref={nameAnimation} id="name" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} > { name } </h1>
                     {/* <code className='htmlText'>&lt;/Name&gt;</code> */}
                     <br />
                     <h2 ref={jobAnimation}> { job } </h2>
@@ -71,7 +82,7 @@ const Header = ({ data }) => {
                     <p ref={aboutAnimation}> { about } </p>
                 </div>
                 <div className='headerImg' ref={imgIntro}>
-                    <img src={HeaderImg} alt="" />
+                    <img src={HeaderImg} alt="" id='myImg' />
                 </div>
             </div>
         </header>

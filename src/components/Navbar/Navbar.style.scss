@@ -63,15 +63,15 @@ nav {
                         }
 
                         span {
-                            font-size: 14px;
+                            font-size: 11px;
                             color: white;
                             background-color: blue;
                             position: absolute;
                             top: -50%;
                             right: 0;
                             transform: translateX(100%);
-                            width: 20px;
-                            height: 20px;
+                            width: 15px;
+                            height: 15px;
                             text-align: center;
                             line-height: 1.2;
                             border-radius: .2em;
@@ -80,6 +80,9 @@ nav {
                             align-items: center;
 
                             @media (max-width:768px) {
+                                font-size: 14px;
+                                width: 20px;
+                                height: 20px;
                                 top: 50%;
                                 transform: translateX(-100%) translateY(-50%);
                             }

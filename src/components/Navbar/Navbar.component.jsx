@@ -16,7 +16,6 @@ import { ReactComponent as XMenu } from '../../assets/x-lg.svg'
 
 import ProjectData from '../../context/Project.data.json'
 
-
 const Navbar = () => {
 
     const [dataToggle, setDataToggle] = useState('false')
@@ -45,8 +44,8 @@ const Navbar = () => {
                         <li><a href="/#project" className='nav-link'><Project className='nav-svg-link' /> project <span>{ projectData.length }</span> </a></li>
                         <li><a href="/#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
                         <li><Link to="#" className='nav-link'><Contact className='nav-svg-link' /> contact</Link></li>
-                        {/* <small>Designed By <i>Ali Reza</i></small> */}
                     </ul>
+                    {/* <small>Designed By <i>Ali Reza</i></small> */}
                 </div>
                 <HamMenu className='ham-menu' onClick={navListShow} />
             </div>
