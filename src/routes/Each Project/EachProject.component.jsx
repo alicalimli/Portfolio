@@ -28,7 +28,7 @@ const EachProject = () => {
             <p> { foundData.description } </p>
             <div className="websites">
                 <a href={ foundData.github } target="_blank">Source</a>
-                { foundData.website != null ? <a href="#" target="_blank">Website</a> : '' }
+                { foundData.website != null ? <a href={ foundData.website } target="_blank">Website</a> : '' }
             </div>
         </div>
     )
