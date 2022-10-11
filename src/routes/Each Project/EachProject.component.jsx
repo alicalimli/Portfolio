@@ -29,13 +29,21 @@ const EachProject = () => {
     useEffect(() => {
         const tl = gsap.timeline()
 
-        tl.to(q('img'), {
+        tl.to(q('.loading'), {
+            opacity: 0,
+            duration: 1
+        })
+        .to(q('.loading'), {
+            display: "none",
+            duration: .1
+        })
+        .to(q('img'), {
             x: 0,
             y: 0,
             rotation: 0,
             opacity: 1,
             duration: 1
-        })
+        }, '-=1')
         .to(q('.bannerImg img'), {
             scale: 1,
             opacity: 1,
@@ -51,20 +59,11 @@ const EachProject = () => {
             opacity: 1,
             duration: .5
         }, '-=.2')
-        .to(q('.websiteLink1'), {
-            x: 0,
-            opacity: 1,
-            duration: .5
-        }, '-=.2')
-        .to(q('.websiteLink2'), {
-            x: 0,
-            opacity: 1,
-            duration: .5
-        }, '-=.2')
     }, [])
 
     return (
         <div className="eachProject" ref={EachProject}>
+            <div className="loading"></div>
             <div className="bannerImg">
                 <img src={foundData.img} alt="" />
                 <div></div>
