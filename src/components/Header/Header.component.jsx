@@ -62,7 +62,8 @@ const Header = ({ data }) => {
         myImg.style.transform = 'rotate(10deg) scale(1.1)';
 
         const reactBadge = document.querySelector('#reactBadge');
-        reactBadge.style.display = "block";
+        reactBadge.style.opacity = "1";
+        reactBadge.style.transform = "rotate(-30deg) scale(1)";
     }
 
     const mouseLeave = () => {
@@ -70,7 +71,8 @@ const Header = ({ data }) => {
         myImg.style.transform = 'rotate(0deg) scale(1)';
 
         const reactBadge = document.querySelector('#reactBadge');
-        reactBadge.style.display = "none";
+        reactBadge.style.opacity = "0";
+        reactBadge.style.transform = "rotate(-90deg) scale(0)";
     }
 
     return(
