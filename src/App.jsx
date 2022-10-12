@@ -9,6 +9,7 @@ import EachProject from "./routes/Each Project/EachProject.component";
 function App() {
 
   return (
+    // Main-Project
     <Routes>
       <Route path="/" element={<NavbarRoute />}>
         <Route index element={<Portfolio />}></Route>
