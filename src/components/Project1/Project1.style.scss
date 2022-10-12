@@ -8,15 +8,30 @@
     border-radius: 1em;
     margin-bottom: 1em;
     transition: .3s;
+    overflow: hidden;
 
     &:hover {
         background-color: #ececec;
     }
 
     .information {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: .8em;
+
+        .projectQuantity {
+            font-size: 20em;
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: .8;
+            opacity: .03;
+            
+            @media (min-width: 768px) {
+                opacity: .0;
+            }
+        }
 
         h2 {
             font-size: 18px;
@@ -120,6 +135,14 @@
     }
     
     &:hover {
+
+        .information {
+
+            .projectQuantity {
+                opacity: .03;
+            }
+        }
+
         & > div:nth-child(2) {
             
             .technology {

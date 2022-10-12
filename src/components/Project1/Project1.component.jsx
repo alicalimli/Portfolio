@@ -13,6 +13,7 @@ const Project1 = ({data, image}) => {
     return (
         <div className='project-1'>
             <div className='information'>
+                <p className='projectQuantity'>{ id }</p>
                 <h2> { name } </h2>
                 <p> { description } </p>
                 <Stack stacks={stacks} />
