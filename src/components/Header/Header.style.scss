@@ -1,4 +1,5 @@
 header {
+    position: relative;
     width: 100%;
     height: auto;
     padding: 0em 2em;
@@ -98,6 +99,37 @@ header {
             img {
                 width: 70%;
                 transition: .3s;
+            }
+
+            h1 {
+                font-size: 16px;
+                background-color: var(--react-color);
+                padding: .5em 1em;
+                border-radius: .5em;
+                position: absolute;
+                top: 0;
+                right: 50%;
+                z-index: -1;
+                rotate: -30deg;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.159);
+                animation: badgeIntro .5s;
+                display: none;
+                transition: .3s;
+
+                @keyframes badgeIntro {
+                    from {
+                        opacity: 0;
+                        transform: scale(0);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    top: 10%;
+                }
             }
 
             @media (max-width: 576px) {

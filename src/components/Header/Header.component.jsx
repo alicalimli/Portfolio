@@ -59,12 +59,18 @@ const Header = ({ data }) => {
 
     const mouseEnter = () => {
         const myImg = document.querySelector('#myImg');
-        myImg.style.transform = 'rotate(10deg) scale(1.1)'
+        myImg.style.transform = 'rotate(10deg) scale(1.1)';
+
+        const reactBadge = document.querySelector('#reactBadge');
+        reactBadge.style.display = "block";
     }
 
     const mouseLeave = () => {
         const myImg = document.querySelector('#myImg');
-        myImg.style.transform = 'rotate(0deg) scale(1)'
+        myImg.style.transform = 'rotate(0deg) scale(1)';
+
+        const reactBadge = document.querySelector('#reactBadge');
+        reactBadge.style.display = "none";
     }
 
     return(
@@ -83,8 +89,10 @@ const Header = ({ data }) => {
                 </div>
                 <div className='headerImg' ref={imgIntro}>
                     <img src={HeaderImg} alt="" id='myImg' />
+                    <h1 id="reactBadge">React Developer</h1>
                 </div>
             </div>
+
         </header>
     )
 }
