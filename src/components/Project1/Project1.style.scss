@@ -1,0 +1,163 @@
+.project-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 1em;
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    transition: .3s;
+
+    &:hover {
+        background-color: #ececec;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+
+        h2 {
+            font-size: 18px;
+        }
+        & > p {
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            border: none;
+            padding: .5em 1em;
+            color: var(--light-dark-color);
+            border-radius: .2em;
+            font-size: 14px;
+            margin: 1.5em 0 1em;
+            transition: .2s;
+            cursor: pointer;
+        
+            &:hover {
+                opacity: .9;
+            }
+        
+            &:active {
+                transform: scale(.95);
+            }
+        }
+        
+    }
+
+    & > div:nth-child(2) {
+        position: relative;
+        overflow: hidden;
+        border-radius: .5em;
+        display: flex;
+
+        &::after {
+            content: '';
+            width: 0%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.462);
+            position: absolute;
+            top: 0;
+            left: 0;
+            // transform: translateX(0%);
+            transform: rotate(35deg) scale(3);
+            transition: .3s;
+        }
+
+        .technology {
+            background-color: #CF9500;
+            color: white;
+            padding: .2em .5em;
+            border-radius: .4em;
+            position: absolute;
+            top: .5em;
+            right: .5em;
+            font-size: 14px;
+            @media (min-width: 768px) {
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: .2s;
+            }
+        }
+        .nodejs {
+            background-color: var(--nodejs-color);
+        }
+        .reactjs {
+            background-color: var(--react-color);
+            color: black;
+        }
+        .html {
+            background-color: var(--html-color);
+        }
+
+        .responsive {
+            font-size: 13px;
+            position: absolute;
+            top: 3.5em;
+            right: .5em;
+            padding: .2em .5em;
+            background-color: green;
+            color: white;
+            border-radius: .4em;
+            
+            @media (min-width: 768px) {
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: .4s;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    &:hover {
+        & > div:nth-child(2) {
+            
+            .technology {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .responsive {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            
+            &::after {
+                animation: projectHover 3s infinite;
+
+                @keyframes projectHover {
+                    0% {
+                        width: 0%;
+                    }
+                    30% {
+                        width: 100%;
+                        background-color: rgba(255, 255, 255, 0.256);
+                        opacity: 0;
+                    }
+                    40% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}

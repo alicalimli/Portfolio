@@ -1,0 +1,117 @@
+header {
+    width: 100%;
+    height: auto;
+    padding: 0em 2em;
+    margin-top: 150px;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0 auto;
+        
+        @media (min-width: 1453px ) {
+            max-width: 1453px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+            gap: 1em;
+        }
+
+
+        .headerInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 900;
+                line-height: 1;
+                font-size: 6em;
+                background: linear-gradient(45deg, #2840B6, #167EC9);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 300%;
+                background-position: right;
+                opacity: 0;
+                transform: translateY(-100px) rotate(-5deg);
+                animation: nameAnimation 1s infinite alternate;
+
+                @keyframes nameAnimation {
+                    from {
+                        background-position: right;
+                    } 
+                    to {
+                        background-position: left;
+                        background-size: 100%;
+                    }
+                }
+            }
+
+            h2 {
+                color: var(--primary-color);
+                line-height: 1;
+                opacity: 0;
+                transform: translateX(-100px) rotate(-5deg);
+            }
+
+            p {
+                opacity: 0;
+                transform: translateY(50px) rotate(-5deg);
+            }
+
+            @media (max-width: 992px) {
+                h1 {
+                    font-size: 5em;
+                }
+
+            }
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 3em;
+                }
+                h2 {
+                    font-size: 1em;
+                    line-height: 0;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            @media (max-width: 576px) {
+                h1 {
+                    font-weight: 800;
+                }
+            }
+        }
+    
+        .headerImg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: scale(1.2) translateX(20px);
+    
+            img {
+                width: 70%;
+                transition: .3s;
+            }
+
+            @media (max-width: 576px) {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        overflow: hidden;
+    }
+    @media (max-width: 576px) {
+        padding: 0 1em;
+    }
+}
