@@ -5,6 +5,11 @@
     .information {
         padding: 1em 15em;
 
+        .dropdown {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
 
 
         @media (max-width: 1129px) {
