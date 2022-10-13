@@ -15,7 +15,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div className='story'>
+    <div className='story' id='story'>
         <h1 className='sectionTitle'>Story</h1>
         <div className='information'>
             <Accordion className='dropdown' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
