@@ -3,8 +3,6 @@
     padding: 1em 2em;
     opacity: 0;
 
-
-
     & > div {
 
         .dropDownLanguage {
@@ -12,25 +10,24 @@
             justify-content: flex-end;
             margin: 1em 0;
 
-            button {
+            .whatIKnow {
                 font-size: 16px;
+                text-transform: none;
                 background-color: var(--dropdown-background-color);
+                color: var(--text-color);
                 padding: .5em 1em;
                 border-radius: .4em;
                 transition: .2s;
                 cursor: pointer;
                 border: none;
                 border: 1px solid var(--background-color);
-                z-index: 999;
+                z-index: 10;
                 transition: .3s;
 
-                &:active {
-                    transform: scale(.9);
-                }
-                &:focus {
-                    background-color: var(--dropdown-hover-background-color);
-                    border: 1px solid var(--nav-list-background-color);
-                }
+                // &:focus {
+                //     background-color: var(--dropdown-hover-background-color);
+                //     border: 1px solid var(--nav-list-background-color);
+                // }
             }
         }
 

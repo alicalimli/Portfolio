@@ -9,6 +9,7 @@ nav {
     display: flex;
     justify-content: center;
     background-color: var(--background-color);   
+    z-index: 999;
     overflow: hidden;
 
     & > div {
@@ -21,6 +22,10 @@ nav {
         // @media (min-width: 1453px ) {
         //     max-width: 1453px;
         // }
+
+        .ham-menu {
+            color: var(--text-color);
+        }
 
         .logoImg {
             height: 100%;
@@ -52,6 +57,7 @@ nav {
                 li {
     
                     .nav-link {
+                        color:  var(--text-color);
                         font-size: 16px;
                         text-transform: capitalize;
                         transition: .3s;
@@ -124,7 +130,6 @@ nav {
                     width: 90%;
                     height: auto;
                     background-color: var(--background-color);
-                    backdrop-filter: blur(10px);
                     flex-direction: column;
                     position: absolute;
                     top: 91px;

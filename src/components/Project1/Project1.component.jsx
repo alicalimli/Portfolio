@@ -1,4 +1,5 @@
 import './Project1.style.scss'
+import Button from '@mui/material/Button';
 
 import Stack from '../Stacks/Stack.components'
 import Technology from '../Technology/Technology.component'
@@ -18,7 +19,8 @@ const Project1 = ({data, image}) => {
                 <p> { description } </p>
                 <Stack stacks={stacks} />
                 <div>
-                    <Link className='button' to={path}>More Information</Link>
+                    {/* <Link className='button' to={path}>More Information</Link> */}
+                    <Link to={path}><Button className='button' variant="contained">More Information</Button></Link>
                 </div>
             </div>
             <div>

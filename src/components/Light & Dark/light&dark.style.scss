@@ -1,0 +1,16 @@
+.dark {
+    --background-color: #101014;
+    --background-color-2: #23232b;
+    --text-color: white;
+    --hover-background-color: black;
+    --border-color: rgba(255, 255, 255, 0.368);
+    --dropdown-background-color: #23232b;
+    --nav-list-background-color: #00000063;
+
+    .project-1 {
+
+        &:hover {
+            background-color: #2b2b34;
+        }
+    }
+}

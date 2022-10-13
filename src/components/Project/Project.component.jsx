@@ -4,6 +4,8 @@ import Project1 from '../Project1/Project1.component'
 
 import { gsap } from 'gsap'
 import { useEffect, useRef, useState } from 'react'
+import Button from '@mui/material/Button';
+
 
 import UltraMovies from '../../assets/Ultra Movies.png'
 import WeatherAPI from '../../assets/Weather API.png'
@@ -46,7 +48,7 @@ const Project = () => {
             <div>
                 <h1 className="sectionTitle">Project</h1>
                 <div className='dropDownLanguage'>
-                    <button onClick={showLanguage}> { buttonValue } </button>
+                    <Button className='whatIKnow' onClick={showLanguage}> { buttonValue } </Button>
                     <Languages />
                 </div>
                 <div className='projects'>

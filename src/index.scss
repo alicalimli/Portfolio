@@ -4,11 +4,14 @@
   --primary-color: #2840B6;
   --secondary-color: #167EC9;
   --background-color: #fff;
+  --background-color-2: #f2f2f2;
+  --text-color: black;
   --hover-background-color: #f2f2f2;
   --dropdown-background-color: #f2f2f2;
   --dropdown-hover-background-color: #edecec;
   --nav-list-background-color: #00000021;
   --light-dark-color: #fff;
+  --border-color: rgba(0, 0, 0, 0.368);
 
   --html-color: #E34C26;
   --css-color: #2565AE;
@@ -28,6 +31,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: .3s;
 }
 
 body {
@@ -59,7 +63,7 @@ body {
     margin-top: 50px;
     font-size: 48px;
     color: var(--primary-color);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.368);
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 16px;
   }
 
@@ -75,3 +79,6 @@ body {
   }
 }
 
+.dark {
+  background-color: #101014;
+}

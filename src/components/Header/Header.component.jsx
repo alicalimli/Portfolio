@@ -1,14 +1,18 @@
 import { gsap } from 'gsap';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import './Header.style.scss';
 
 
-import HeaderImg from '../../assets/header img 2.png'
+
 
 import BackgroundGradient from '../Background Gradient/bgGradient.component'
 import Loading from '../LoadingPage/Loading.component';
 
-const Header = ({ data }) => {
+const Header = ({ data, img }) => {
+
+    console.log(img)
+
+    // const [ headerImage, setHeaderImage ] = useState(HeaderImg)
     
     const { name, job, about } = data;
 
@@ -75,6 +79,15 @@ const Header = ({ data }) => {
         reactBadge.style.transform = "rotate(-90deg) scale(0)";
     }
 
+
+    // useEffect(() => {
+    //     if (darkImageHeader == true) {
+    //         setHeaderImage(HeaderImg)
+    //     } else if (darkImageHeader == false) {
+    //         setHeaderImage(HeaderImg)
+    //     }
+    // }, [])
+
     return(
         <header id="about">
             {/* <Loading /> */}
@@ -90,7 +103,7 @@ const Header = ({ data }) => {
                     <p ref={aboutAnimation}> { about } </p>
                 </div>
                 <div className='headerImg' ref={imgIntro}>
-                    <img src={HeaderImg} alt="" id='myImg' />
+                    <img src={ img } alt="" id='myImg' />
                     <h1 id="reactBadge">React Developer</h1>
                 </div>
             </div>
