@@ -8,6 +8,14 @@
         .dropdown {
             background-color: var(--background-color);
             color: var(--text-color);
+
+            img {
+                width: 30px;
+
+                @media (max-width: 576px) {
+                    margin-left: 3em;
+                }
+            }
         }
 
 
