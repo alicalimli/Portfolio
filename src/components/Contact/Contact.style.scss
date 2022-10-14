@@ -1,5 +1,59 @@
 .contact {
     padding: 0em 2em;
+    height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        margin-top: 1em;
+        
+        input, textarea {
+            color: var(--text-color);
+            background-color: var(--background-color);
+            width: 50%;
+            padding: 1em;
+            border: 1.5px solid rgba(0, 0, 0, 0.458);
+            outline: none;
+            border-radius: .5em;
+        }
+
+        .submit {
+            background-color: var(--primary-color);
+            width: 50%;
+            transition: .3s;
+        }
+
+        .bad {
+            border-color: red;
+            box-shadow: 0 0 10px rgba(128, 0, 0, 0.448);
+        }
+        .perfect {
+            border: 1.5px solid green;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.448);
+        }
+
+
+        @media (max-width: 992px) {
+            input, textarea, .submit {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            input, textarea, .submit {
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            input, textarea, .submit {
+                width: 100%;
+            }
+        }
+    }
 
 
     @media (max-width: 576px) {

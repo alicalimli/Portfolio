@@ -9,10 +9,6 @@ import BackgroundGradient from '../Background Gradient/bgGradient.component'
 import Loading from '../LoadingPage/Loading.component';
 
 const Header = ({ data, img }) => {
-
-    console.log(img)
-
-    // const [ headerImage, setHeaderImage ] = useState(HeaderImg)
     
     const { name, job, about } = data;
 
