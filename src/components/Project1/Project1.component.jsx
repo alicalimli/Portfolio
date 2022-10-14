@@ -5,11 +5,10 @@ import Stack from '../Stacks/Stack.components'
 import Technology from '../Technology/Technology.component'
 import Responsive from '../Responsive/Responsive.component'
 
-import { Link } from 'react-router-dom'
 
 const Project1 = ({data, image}) => {
 
-    const { id, name, stacks, technology, description, path } = data;
+    const { id, name, stacks, technology, description, website, github } = data;
 
     return (
         <div className='project-1'>
@@ -19,8 +18,8 @@ const Project1 = ({data, image}) => {
                 <p> { description } </p>
                 <Stack stacks={stacks} />
                 <div>
-                    {/* <Link className='button' to={path}>More Information</Link> */}
-                    <Link to={path}><Button className='button' variant="contained">More Information</Button></Link>
+                    <a href={github} target="_blank"><Button className='button' variant="contained">Source</Button></a>
+                    { website != null ? <a href={website} target="_blank"><Button className='button' variant="contained">Website</Button></a> : "" }
                 </div>
             </div>
             <div>
