@@ -3,6 +3,7 @@ import { Fragment, useState } from "react"
 import Header from "../components/Header/Header.component"
 import Project from "../components/Project/Project.component"
 import ControlledAccordions from "../components/Story/Story.component"
+import Contact from "../components/Contact/Contact.component"
 
 import { MaterialUISwitch } from '../components/Light & Dark/light&dark.component'
 
@@ -38,6 +39,7 @@ const Portfolio = () => {
             <Header data={ information } img={headerImage} />
             <Project />
             <ControlledAccordions />
+            <Contact />
         </Fragment>
     )
 }
