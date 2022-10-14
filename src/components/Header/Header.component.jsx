@@ -2,12 +2,6 @@ import { gsap } from 'gsap';
 import { useRef, useEffect, useState } from 'react';
 import './Header.style.scss';
 
-
-
-
-import BackgroundGradient from '../Background Gradient/bgGradient.component'
-import Loading from '../LoadingPage/Loading.component';
-
 const Header = ({ data, img }) => {
     
     const { name, job, about } = data;
@@ -75,19 +69,8 @@ const Header = ({ data, img }) => {
         reactBadge.style.transform = "rotate(-90deg) scale(0)";
     }
 
-
-    // useEffect(() => {
-    //     if (darkImageHeader == true) {
-    //         setHeaderImage(HeaderImg)
-    //     } else if (darkImageHeader == false) {
-    //         setHeaderImage(HeaderImg)
-    //     }
-    // }, [])
-
     return(
         <header id="about">
-            {/* <Loading /> */}
-            {/* <BackgroundGradient /> */}
             <div className='container'>
                 <div className='headerInfo'>
                     {/* <code className='htmlText'>&lt;Name&gt;</code> */}

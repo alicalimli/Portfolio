@@ -64,7 +64,7 @@ export default function ControlledAccordions() {
                 <Typography sx={{ width: '33%', flexShrink: 0 }}>
                     India
                 </Typography>
-                <img src="https://cdn-icons-png.flaticon.com/512/206/206606.png" alt="" />
+                <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" alt="" />
                 </AccordionSummary>
                 <AccordionDetails>
                 <Typography>
@@ -82,7 +82,7 @@ export default function ControlledAccordions() {
                     <Typography sx={{ width: '33%', flexShrink: 0 }}>
                         Indonesian
                     </Typography>
-                    <img src="https://cdn-icons-png.flaticon.com/512/2151/2151329.png" alt="" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/330/330476.png" alt="" />
                     </AccordionSummary>
                     <AccordionDetails>
                     <Typography>

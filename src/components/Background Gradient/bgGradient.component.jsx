@@ -1,9 +1,9 @@
 import './bgGradient.style.scss'
 
-const BackgroundGradient = () => {
+const BackgroundGradient = ({bottom, right, hide}) => {
     return (
         <div>
-            <div className="bg1"></div>
+            <div style={{bottom: bottom, right: right}} className={`bg1 ${hide}`}></div>
         </div>
     )
 }

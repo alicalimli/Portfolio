@@ -28,6 +28,10 @@
 
         .dropdown {
             background-color: #23232b;
+
+            img {
+                filter: grayscale(50%);
+            }
         }
     }
 

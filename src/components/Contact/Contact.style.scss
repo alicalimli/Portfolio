@@ -1,6 +1,6 @@
 .contact {
     padding: 0em 2em;
-    height: 100vh;
+    height: auto;
 
     form {
         display: flex;
@@ -19,6 +19,7 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.458);
             outline: none;
             transition: 0s;
+            border-radius: .3em;
             resize: vertical;
 
             &:focus {

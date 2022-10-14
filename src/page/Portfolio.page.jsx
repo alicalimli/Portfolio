@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react"
 
+import BackgroundGradient from '../components/Background Gradient/bgGradient.component'
 import Header from "../components/Header/Header.component"
 import Project from "../components/Project/Project.component"
 import ControlledAccordions from "../components/Story/Story.component"
@@ -35,6 +36,9 @@ const Portfolio = () => {
 
     return (
         <Fragment>
+            <BackgroundGradient bottom="-100%" right="50%" />
+            <BackgroundGradient bottom="-250%" right="90%" hide="hide" />
+            <BackgroundGradient bottom="-20%" right="80%" hide="hide" />
             <MaterialUISwitch onClick={dakrandlight} />
             <Header data={ information } img={headerImage} />
             <Project />
