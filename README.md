@@ -2,6 +2,8 @@
 
 I'm making my first Portfolio ever...
 
+<img src="./src/assets/Banner.png" width="100%">
+
 
 >**Note** <br />
 > I'm still working on it...
