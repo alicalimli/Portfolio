@@ -5,6 +5,8 @@ import Header from "../components/Header/Header.component"
 import Project from "../components/Project/Project.component"
 import ControlledAccordions from "../components/Story/Story.component"
 import Contact from "../components/Contact/Contact.component"
+import Footer from "../components/Footer/Footer.component"
+import SocialMedia from "../components/Social Media/SocialMedia.component"
 
 import { MaterialUISwitch } from '../components/Light & Dark/light&dark.component'
 
@@ -34,8 +36,11 @@ const Portfolio = () => {
         }
     }
 
+    const owner = 'Ali Reza';
+
     return (
         <Fragment>
+            <SocialMedia />
             <BackgroundGradient bottom="-100%" right="50%" />
             <BackgroundGradient bottom="-250%" right="90%" hide="hide" />
             <BackgroundGradient bottom="-20%" right="80%" hide="hide" />
@@ -44,6 +49,7 @@ const Portfolio = () => {
             <Project />
             <ControlledAccordions />
             <Contact />
+            <Footer owner={owner} />
         </Fragment>
     )
 }
