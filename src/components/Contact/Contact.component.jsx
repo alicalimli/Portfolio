@@ -40,7 +40,7 @@ const Contact = () => {
         gsap.to('.contactSVG', {
             scrollTrigger: {
                 trigger: '.contactSVG',
-                start: "top center"
+                start: "top center",
             },
             opacity: 1,
             y: 0,
@@ -49,7 +49,7 @@ const Contact = () => {
         gsap.to('.container form', {
             scrollTrigger: {
                 trigger: '.container > form',
-                start: "top center"
+                start: "top center",
             },
             y: 0,
             opacity: 1,
