@@ -11,16 +11,23 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        const sentPopUp = document.querySelector('#sent');
 
         emailjs.sendForm('service_lg91no7', 'template_jvmvmpc', form.current, 'CecX6cwe1Y7L1F7L0')
         .then((result) => {
             console.log(result.text);
+            sentPopUp.style.display = 'flex';
         }, (error) => {
             console.log(error.text);
         });
         
         e.target.reset()
     };
+
+    const closingSent = () => {
+        const sentPopUp = document.querySelector('#sent');
+        sentPopUp.style.display = "none";
+    }
 
     return (
         <div className='contact' id='contact'>
@@ -38,6 +45,13 @@ const Contact = () => {
                     Send
                 </Button>
             </form>
+
+            <div id="sent" onClick={closingSent}>
+                <div>
+                    <h1>Thank You for the Email</h1>
+                    <p>I'll read it soon</p>
+                </div>
+            </div>
         </div>
     )
 }

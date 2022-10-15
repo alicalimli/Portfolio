@@ -56,7 +56,7 @@ const Languages = () => {
     return (
         <div className='languages' data-language-toggle="false">
             <div>
-                <h1>Languages</h1>
+                <h1>Skills</h1>
                 <div className='categories'>
                     <div>
                         { languages.map(L => {
