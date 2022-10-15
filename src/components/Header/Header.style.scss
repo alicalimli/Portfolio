@@ -28,27 +28,31 @@ header {
             align-items: flex-start;
 
             h1 {
-                font-family: 'Raleway', sans-serif;
-                font-weight: 900;
-                line-height: 1;
-                font-size: 6em;
-                background: linear-gradient(45deg, #2840B6, #167EC9);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-size: 300%;
-                background-position: right;
+                font-size: 5em;
+                line-height: 1.1;
+                color: var(--text-color);
                 opacity: 0;
                 transform: translateY(-100px) rotate(-5deg);
-                animation: nameAnimation 1s infinite alternate;
                 transition-duration: 0s;
+                
+                span {
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 900;
+                    background: linear-gradient(45deg, #2840B6, #167EC9);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 300%;
+                    background-position: right;
+                    animation: nameAnimation .3s infinite alternate;
 
-                @keyframes nameAnimation {
-                    from {
-                        background-position: right;
-                    } 
-                    to {
-                        background-position: left;
-                        background-size: 100%;
+                    @keyframes nameAnimation {
+                        from {
+                            background-position: right;
+                        } 
+                        to {
+                            background-position: left;
+                            background-size: 100%;
+                        }
                     }
                 }
             }

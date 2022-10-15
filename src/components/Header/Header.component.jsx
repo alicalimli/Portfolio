@@ -26,11 +26,11 @@ const Header = ({ data, img }) => {
             opacity: 1,
             duration: .5
         }, "-=1")
-        .to(jobAnimation.current, {
-            x: 0,
-            opacity: 1,
-            duration: .5
-        }, '-=.5')
+        // .to(jobAnimation.current, {
+        //     x: 0,
+        //     opacity: 1,
+        //     duration: .5
+        // }, '-=.5')
         .to(aboutAnimation.current, {
             y: 0,
             opacity: 1,
@@ -40,10 +40,10 @@ const Header = ({ data, img }) => {
             rotation: 0,
             duration: .3
         })
-        .to(jobAnimation.current, {
-            rotation: 0,
-            duration: .3
-        })
+        // .to(jobAnimation.current, {
+        //     rotation: 0,
+        //     duration: .3
+        // })
         .to(aboutAnimation.current, {
             rotation: 0,
             duration: .3
@@ -74,11 +74,15 @@ const Header = ({ data, img }) => {
             <div className='container'>
                 <div className='headerInfo'>
                     {/* <code className='htmlText'>&lt;Name&gt;</code> */}
-                    <h1 ref={nameAnimation} id="name" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} > { name } </h1>
+                    <h1 ref={nameAnimation} id="name" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} > 
+                        Hi There! <br />
+                        I am <br />
+                        <span>{ name }</span>
+                    </h1>
                     {/* <code className='htmlText'>&lt;/Name&gt;</code> */}
                     <br />
-                    <h2 ref={jobAnimation}> { job } </h2>
-                    <br />
+                    {/* <h2 ref={jobAnimation}> { job } </h2> */}
+                    {/* <br /> */}
                     <p ref={aboutAnimation}> { about } </p>
                 </div>
                 <div className='headerImg' ref={imgIntro}>

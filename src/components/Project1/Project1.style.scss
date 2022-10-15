@@ -8,7 +8,9 @@
     padding: 1em;
     border-radius: 1em;
     margin-bottom: 1em;
-    transition: .3s;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: background-color .3s;
     overflow: hidden;
 
     &:hover {
