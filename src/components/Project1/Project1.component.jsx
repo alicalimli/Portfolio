@@ -21,7 +21,7 @@ const Project1 = ({data, image}) => {
             y: 0,
             opacity: 1,
             stagger: .3,
-            duration: 1,
+            duration: .5,
             scrollTrigger: {
                 trigger: '.project-1',
                 start: "top 70%"

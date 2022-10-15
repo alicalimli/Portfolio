@@ -5,6 +5,11 @@ import emailjs from '@emailjs/browser';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 
+import { ReactComponent as ContactSVG } from '../../assets/contact.svg'
+import { gsap } from 'gsap';
+import { useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 const Contact = () => {
 
     const form = useRef();
@@ -29,22 +34,51 @@ const Contact = () => {
         sentPopUp.style.display = "none";
     }
 
+    gsap.registerPlugin(ScrollTrigger)
+
+    useEffect(() => {
+        gsap.to('.contactSVG', {
+            scrollTrigger: {
+                trigger: '.contactSVG',
+                start: "top center"
+            },
+            opacity: 1,
+            y: 0,
+            duration: .5
+        })
+        gsap.to('.container form', {
+            scrollTrigger: {
+                trigger: '.container > form',
+                start: "top center"
+            },
+            y: 0,
+            opacity: 1,
+            delay: .2,
+            duration: .5
+        })
+    }, [])
+
     return (
         <div className='contact' id='contact'>
             <h1 className="sectionTitle">Contact</h1>
-            <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name='name' placeholder='name' required/>
-                <input type="email" name='email' placeholder='email' required />
-                <input type='url' name='socialMedia' placeholder='Social Media: https://' required />
-                <div>
-                    <input type="text" name='phoneCode' placeholder='+62' />
-                    <input type="text" name='phoneNO' placeholder='phone number optional*' />
+            <div className='container'>
+                <div className='contactSVG'>
+                    <ContactSVG />
                 </div>
-                <textarea name="message" id="" cols="30" rows="10" defaultValue="Hi Ali Reza," required></textarea>
-                <Button type='submit' className='submit' variant="contained" endIcon={<SendIcon />} >
-                    Send
-                </Button>
-            </form>
+                <form ref={form} onSubmit={sendEmail}>
+                    <input type="text" name='name' placeholder='name' required/>
+                    <input type="email" name='email' placeholder='email' required />
+                    <input type='url' name='socialMedia' placeholder='Social Media: https://' required />
+                    <div>
+                        <input type="text" name='phoneCode' placeholder='+62' />
+                        <input type="text" name='phoneNO' placeholder='phone number optional*' />
+                    </div>
+                    <textarea name="message" id="" cols="30" rows="10" defaultValue="Hi Ali Reza," required></textarea>
+                    <Button type='submit' className='submit' variant="contained" endIcon={<SendIcon />} >
+                        Send
+                    </Button>
+                </form>
+            </div>
 
             <div id="sent" onClick={closingSent}>
                 <div>

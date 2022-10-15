@@ -2,68 +2,126 @@
     padding: 0em 2em;
     height: auto;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        gap: 1em;
         margin-top: 3em;
-        
-        input, textarea {
-            color: var(--text-color);
-            background-color: var(--background-color);
-            width: 50%;
-            padding: 1em;
-            border: none;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.458);
-            outline: none;
-            transition: 0s;
-            border-radius: .3em;
-            resize: vertical;
 
-            &:focus {
-                border-bottom-color: var(--primary-color);
+        & > div {
+            opacity: 0;
+            transform: translateY(50px);
+            transition-duration: 0s;
+
+            #earth {
+                fill: var(--primary-color);
+                transform-origin: center;
+                transform-box: fill-box;
+                animation: earthRotating 10s infinite linear;
+
+                @keyframes earthRotating {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            #person1, #person2, #person3 {
+                transform-origin: center;
+                transform-box: fill-box;
+                animation: person1 1s infinite alternate;
+                box-shadow: 0 0 10px red;
+
+                @keyframes person1 {
+                    from {
+                        transform: scale(1);
+                    }
+                    to {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            #person2 {
+                animation-duration: 1.3s;
+            }
+            #person3 {
+                animation-duration: .8s;
             }
         }
 
-        div {
-            width: 50%;
+        form {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 1em;
-
-            input {
-                width: 100%;
+            transform: translateY(50px);
+            opacity: 0;
+            transition-duration: 0s;
+            
+            input, textarea {
+                color: var(--text-color);
+                background-color: var(--background-color);
+                width: 90%;
+                padding: 1em;
+                border: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.458);
+                outline: none;
+                transition: 0s;
+                border-radius: .3em;
+                resize: vertical;
+    
+                &:focus {
+                    border-bottom-color: var(--primary-color);
+                }
             }
-            input:nth-of-type(1) {
-                width: 70px;
-                text-align: center;
+    
+            div {
+                width: 90%;
+                display: flex;
+                gap: 1em;
+    
+                input {
+                    width: 100%;
+                }
+                input:nth-of-type(1) {
+                    width: 70px;
+                    text-align: center;
+                }
             }
-        }
-
-        .submit {
-            background-color: var(--primary-color);
-            width: 50%;
-            transition: .3s;
-        }
-
-
-        @media (max-width: 992px) {
-            input, textarea, .submit, div {
-                width: 70%;
+    
+            .submit {
+                background-color: var(--primary-color);
+                width: 90%;
+                transition: .3s;
+            }
+    
+    
+            @media (max-width: 992px) {
+                input, textarea, .submit, div {
+                    width: 70%;
+                }
+            }
+    
+            @media (max-width: 768px) {
+                input, textarea, .submit, div {
+                    width: 80%;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                input, textarea, .submit, div {
+                    width: 100%;
+                }
             }
         }
 
         @media (max-width: 768px) {
-            input, textarea, .submit, div {
-                width: 80%;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            input, textarea, .submit, div {
-                width: 100%;
-            }
+            grid-template-columns: 1fr;
         }
     }
 
