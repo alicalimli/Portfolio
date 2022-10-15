@@ -6,9 +6,10 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 
 import { ReactComponent as ContactSVG } from '../../assets/contact.svg'
-import { gsap } from 'gsap';
-import { useEffect } from 'react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Contact = () => {
 
@@ -34,38 +35,14 @@ const Contact = () => {
         sentPopUp.style.display = "none";
     }
 
-    gsap.registerPlugin(ScrollTrigger)
-
-    useEffect(() => {
-        gsap.to('.contactSVG', {
-            scrollTrigger: {
-                trigger: '.contactSVG',
-                start: "top center",
-            },
-            opacity: 1,
-            y: 0,
-            duration: .5
-        })
-        gsap.to('.container form', {
-            scrollTrigger: {
-                trigger: '.container > form',
-                start: "top center",
-            },
-            y: 0,
-            opacity: 1,
-            delay: .2,
-            duration: .5
-        })
-    }, [])
-
     return (
         <div className='contact' id='contact'>
             <h1 className="sectionTitle">Contact</h1>
             <div className='container'>
-                <div className='contactSVG'>
+                <div className='contactSVG' data-aos="zoom-in" >
                     <ContactSVG />
                 </div>
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail} data-aos="zoom-out">
                     <input type="text" name='name' placeholder='name' required/>
                     <input type="email" name='email' placeholder='email' required />
                     <input type='url' name='socialMedia' placeholder='Social Media: https://' required />

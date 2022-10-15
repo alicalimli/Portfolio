@@ -9,9 +9,6 @@
         margin-top: 3em;
 
         & > div {
-            opacity: 0;
-            transform: translateY(50px);
-            transition-duration: 0s;
 
             #earth {
                 fill: var(--primary-color);
@@ -60,8 +57,6 @@
             align-items: center;
             gap: 1em;
             transform: translateY(50px);
-            opacity: 0;
-            transition-duration: 0s;
             
             input, textarea {
                 color: var(--text-color);

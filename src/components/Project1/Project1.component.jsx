@@ -5,32 +5,16 @@ import Stack from '../Stacks/Stack.components'
 import Technology from '../Technology/Technology.component'
 import Responsive from '../Responsive/Responsive.component'
 
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Project1 = ({data, image}) => {
 
     const { id, name, stacks, technology, description, website, github } = data;
-    const project = useRef(null)
-
-    gsap.registerPlugin(ScrollTrigger)
-
-    useEffect(() => {
-        gsap.to('.project-1', {
-            y: 0,
-            opacity: 1,
-            stagger: .3,
-            duration: 1,
-            scrollTrigger: {
-                trigger: '.project-1',
-                start: "top 70%"
-            }
-        })
-    }, [])
 
     return (
-        <div className='project-1' ref={project}>
+        <div className='project-1' data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
             <div className='information'>
                 <p className='projectQuantity'>{ id }</p>
                 <h2> { name } </h2>

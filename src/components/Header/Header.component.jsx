@@ -8,7 +8,6 @@ const Header = ({ data, img }) => {
 
     const imgIntro = useRef(null);
     const nameAnimation = useRef(null);
-    const jobAnimation = useRef(null);
     const aboutAnimation = useRef(null);
 
     useEffect(() => {
@@ -26,24 +25,15 @@ const Header = ({ data, img }) => {
             opacity: 1,
             duration: .5
         }, "-=1")
-        // .to(jobAnimation.current, {
-        //     x: 0,
-        //     opacity: 1,
-        //     duration: .5
-        // }, '-=.5')
         .to(aboutAnimation.current, {
             y: 0,
             opacity: 1,
             duration: .5
-        })
+        }, '-=.5')
         .to(nameAnimation.current, {
             rotation: 0,
             duration: .3
         })
-        // .to(jobAnimation.current, {
-        //     rotation: 0,
-        //     duration: .3
-        // })
         .to(aboutAnimation.current, {
             rotation: 0,
             duration: .3
