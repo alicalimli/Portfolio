@@ -11,6 +11,7 @@ import UltraMovies from '../../assets/Ultra Movies.png'
 import WeatherAPI from '../../assets/Weather API.png'
 import UltraNFT from '../../assets/Ultra NFT.png'
 import Nike from '../../assets/Nike.png'
+import Monster from '../../assets/Monster.png'
 
 import ProjectData from '../../context/Project.data.json'
 import Languages from '../languages/Languages.component'
@@ -56,6 +57,7 @@ const Project = () => {
                     <Project1 data={projectData[1]} image={WeatherAPI} />
                     <Project1 data={projectData[2]} image={UltraNFT} />
                     <Project1 data={projectData[3]} image={Nike} />
+                    <Project1 data={projectData[4]} image={Monster} />
                 </div>
             </div>
         </div>
