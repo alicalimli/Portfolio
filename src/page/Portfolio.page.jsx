@@ -8,6 +8,7 @@ import Contact from "../components/Contact/Contact.component"
 import Footer from "../components/Footer/Footer.component"
 import SocialMedia from "../components/Social Media/SocialMedia.component"
 import Github from "../components/GitHub/github.component"
+import Loading from "../components/LoadingPage/Loading.component"
 
 import { MaterialUISwitch } from '../components/Light & Dark/light&dark.component'
 
@@ -42,10 +43,16 @@ const Portfolio = () => {
     setTimeout(() => {
         const sourceCode = document.querySelector('.github');
         sourceCode.classList.add('showGithub')
-    }, 5000)
+    }, 8000)
 
+    setTimeout(() => {
+        const loading = document.querySelector('.loading');
+        loading.style.display = 'none'
+    }, 2000)
+    
     return (
         <Fragment>
+            <Loading />
             <Github />
             <SocialMedia />
             <BackgroundGradient bottom="-100%" right="50%" />

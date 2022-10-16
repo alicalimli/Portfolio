@@ -18,6 +18,7 @@ const Header = ({ data, img }) => {
             x: 0,
             ease: "Power4.easeOut",
             rotation: 0,
+            delay: 1,
             duration: 1.5
         })
         .to(nameAnimation.current, {
