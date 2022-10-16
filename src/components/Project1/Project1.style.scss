@@ -9,6 +9,7 @@
     border-radius: 1em;
     margin-bottom: 1em;
     transition: background-color .3s;
+    box-shadow: 0 6px 1px rgba(0, 0, 0, 0.142);
     overflow: hidden;
 
     &:hover {
@@ -50,12 +51,14 @@
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            gap: 1em;
+            gap: .5em;
 
             a {
                 
 
                 .button {
+                    font-size: 12px;
+                    font-weight: 500;
                     width: 100%;
                     position: relative;
                     display: inline-block;
@@ -64,12 +67,19 @@
                     padding: .5em 1em;
                     color: var(--light-dark-color);
                     border-radius: .2em;
-                    font-size: 14px;
                     margin: 1.5em 0 1em;
                     transition: .2s;
                     cursor: pointer;
                     overflow: hidden;
+
+                    @media (min-width: 576px) {
+                        font-size: 14px;
+                    }
                 }
+            }
+            
+            @media (min-width: 576px) {
+                gap: 1em;
             }
         }
         
