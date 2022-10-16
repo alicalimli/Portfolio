@@ -7,6 +7,7 @@ import ControlledAccordions from "../components/Story/Story.component"
 import Contact from "../components/Contact/Contact.component"
 import Footer from "../components/Footer/Footer.component"
 import SocialMedia from "../components/Social Media/SocialMedia.component"
+import Github from "../components/GitHub/github.component"
 
 import { MaterialUISwitch } from '../components/Light & Dark/light&dark.component'
 
@@ -38,8 +39,14 @@ const Portfolio = () => {
 
     const owner = 'Ali Reza';
 
+    setTimeout(() => {
+        const sourceCode = document.querySelector('.github');
+        sourceCode.classList.add('showGithub')
+    }, 5000)
+
     return (
         <Fragment>
+            <Github />
             <SocialMedia />
             <BackgroundGradient bottom="-100%" right="50%" />
             <BackgroundGradient bottom="-250%" right="90%" hide="hide" />

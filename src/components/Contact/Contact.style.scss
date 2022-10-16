@@ -30,7 +30,6 @@
                 transform-origin: center;
                 transform-box: fill-box;
                 animation: person1 1s infinite alternate;
-                box-shadow: 0 0 10px red;
 
                 @keyframes person1 {
                     from {
@@ -40,6 +39,7 @@
                         transform: scale(1.2);
                     }
                 }
+
             }
 
             #person2 {
@@ -47,6 +47,14 @@
             }
             #person3 {
                 animation-duration: .8s;
+            }
+
+            #Vector {
+                fill: var(--background-color-2);
+            }
+
+            #Vector_star {
+                fill: goldenrod;
             }
         }
 
