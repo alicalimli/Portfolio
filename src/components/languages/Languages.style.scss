@@ -1,0 +1,116 @@
+.languages {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--nav-list-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    padding: 1em;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    & > div {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        background-color: var(--background-color);
+        padding: 1em;
+        border-radius: 1em;
+        overflow: hidden;
+
+        h1 {
+            color: var(--text-color);
+            animation: language 2s;
+            margin-bottom: .5em;
+
+            @keyframes language {
+                from {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            @media (max-width: 576px) {
+                font-size: 24px;
+            }
+        }
+
+        .categories {
+            display: flex;
+
+            & > div {
+                width: 100%;
+
+                .language-category {
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    padding: 1em;
+                    border-radius: .5em;
+        
+                    img {
+                        height: 20px;
+                        animation: imgLanguage;
+
+                        @keyframes imgLanguage {
+                            from {
+                                opacity: 0;
+                                transform: translateX(-30px);
+                            }
+                            to {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+        
+                    p {
+                        color: var(--text-color);
+                        border-radius: .5em;
+                        animation: pLanguage;
+
+                        @keyframes pLanguage {
+                            from {
+                                opacity: 0;
+                                transform: translateX(-30px);
+                            }
+                            to {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+        
+                    &:hover {
+                        background-color: var(--hover-background-color);
+                    }
+        
+                }
+            }
+
+            @media (max-width: 576px) {
+                flex-direction: column;
+            }
+        }
+
+
+        @media (max-width: 576px) {
+            border-radius: 1em 0 0 1em;
+            height: 400px;
+            overflow: auto;
+        }
+    }
+}
+
+.languages[data-language-toggle='true'] {
+    display: flex;
+}

@@ -1,0 +1,192 @@
+.contact {
+    padding: 0em 2em;
+    height: auto;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-top: 3em;
+
+        & > div {
+
+            #earth {
+                fill: var(--primary-color);
+                transform-origin: center;
+                transform-box: fill-box;
+                animation: earthRotating 10s infinite linear;
+
+                @keyframes earthRotating {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            #person1, #person2, #person3 {
+                transform-origin: center;
+                transform-box: fill-box;
+                animation: person1 1s infinite alternate;
+
+                @keyframes person1 {
+                    from {
+                        transform: scale(1);
+                    }
+                    to {
+                        transform: scale(1.2);
+                    }
+                }
+
+            }
+
+            #person2 {
+                animation-duration: 1.3s;
+            }
+            #person3 {
+                animation-duration: .8s;
+            }
+
+            #Vector {
+                fill: var(--background-color-2);
+            }
+
+            #Vector_star {
+                fill: goldenrod;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            transform: translateY(50px);
+            
+            input, textarea {
+                color: var(--text-color);
+                background-color: var(--background-color);
+                width: 90%;
+                padding: 1em;
+                border: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.458);
+                outline: none;
+                transition: 0s;
+                border-radius: .3em;
+                resize: vertical;
+    
+                &:focus {
+                    border-bottom-color: var(--primary-color);
+                }
+            }
+    
+            div {
+                width: 90%;
+                display: flex;
+                gap: 1em;
+    
+                input {
+                    width: 100%;
+                }
+                input:nth-of-type(1) {
+                    width: 70px;
+                    text-align: center;
+                }
+            }
+    
+            .submit {
+                background-color: var(--primary-color);
+                width: 90%;
+                transition: .3s;
+            }
+    
+    
+            @media (max-width: 992px) {
+                input, textarea, .submit, div {
+                    width: 70%;
+                }
+            }
+    
+            @media (max-width: 768px) {
+                input, textarea, .submit, div {
+                    width: 80%;
+                }
+            }
+            
+            @media (max-width: 576px) {
+                input, textarea, .submit, div {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #sent {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--nav-list-background-color);
+        top: 0;
+        left: 0;
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            padding: 3em;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            border-radius: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: sentIntro 1s;
+
+            @keyframes sentIntro {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            h1 {
+                color: green;
+            }
+
+
+            @media (max-width: 768px) {
+                padding: 2em;
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                padding: 1em;
+
+                h1 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 576px) {
+        padding: 0 1em;
+    }
+}
