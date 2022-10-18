@@ -6,9 +6,13 @@ div {
         background-color: #167ec945;
         border-radius: 50%;
         position: absolute;
-        bottom: -100px;
-        right: 50%;
         z-index: -1;
         filter: blur(100px);
+    }
+
+    @media (max-width: 768px) {
+        .hide {
+            display: none;
+        }
     }
 }

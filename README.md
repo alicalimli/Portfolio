@@ -1,6 +1,20 @@
 # Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I'm making my first Portfolio ever...
+
+<img src="./src/assets/Banner.png" width="100%">
+
+
+>**Note** <br />
+> I'm still working on it...
+
+## My process for this Project
+- [x] Navbar
+- [x] About
+- [x] Project
+- [x] Story
+- [x] Contact
+- [x] Footer 
 
 ## My process for this Project
 - [x] Navbar
@@ -33,11 +47,24 @@ In the project directory, you can run:
     ```console
     $ npm install
     ```
+<<<<<<< HEAD
+=======
+    ```console
+    $ yarn
+    ```
+>>>>>>> Main-Project
 
 4.  Run the project
 
     ```console
+<<<<<<< HEAD
     $ npm start
+=======
+    $ npm run dev
+    ```
+    ```console
+    $ yarn dev
+>>>>>>> Main-Project
     ```
 
 # Websites
