@@ -20,7 +20,7 @@
         "technology": "NodeJS",
         "responsive": true,
         "path": "/project/weatherapi",
-        "description": "This is the website where You can check the weather of the most Cities.",
+        "description": "Access current weather data for any location including over 200,000 cities",
         "img": "https://i.ibb.co/frGHLwG/Weather-API.png",
         "github": "https://github.com/AliReza1083/Weather-Api",
         "website": null
@@ -33,7 +33,7 @@
         "technology": "HTML",
         "responsive": true,
         "path": "/project/ultra-nft",
-        "description": "This is the website where You can check the weather of the most Cities.",
+        "description": "Dicover, collect, and sell extraordinary NFTs. NFT is the worlds first and largest NFT marketplace.",
         "img": "https://i.ibb.co/cLHT2x5/Ultra-NFT.png",
         "github": "https://github.com/AliReza1083/Ultra-NFT",
         "website": "https://alireza1083.github.io/Ultra-NFT/"
@@ -46,7 +46,7 @@
         "technology": "HTML",
         "responsive": true,
         "path": "/project/nike",
-        "description": "This is the website where You can check the weather of the most Cities.",
+        "description": "I cloned Nike website (Mens' section)",
         "img": "https://i.ibb.co/HxqH89s/Nike.png",
         "github": "https://github.com/AliReza1083/Nike",
         "website": "https://wonderful-eclair-f31dad.netlify.app/"
@@ -59,7 +59,7 @@
         "technology": "ReactJS",
         "responsive": true,
         "path": "/project/monster",
-        "description": "This is the website where You can check the weather of the most Cities.",
+        "description": "Search Monsters and get one...",
         "img": "https://i.ibb.co/HxqH89s/Nike.png",
         "github": "https://github.com/AliReza1083/First-Project-ZTM",
         "website": "https://adorable-stroopwafel-6c8c08.netlify.app/"
