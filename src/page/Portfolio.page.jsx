@@ -3,7 +3,6 @@ import { Fragment, useState } from "react"
 import BackgroundGradient from '../components/Background Gradient/bgGradient.component'
 import Header from "../components/Header/Header.component"
 import Project from "../components/Project/Project.component"
-import ControlledAccordions from "../components/Story/Story.component"
 import Contact from "../components/Contact/Contact.component"
 import Footer from "../components/Footer/Footer.component"
 import SocialMedia from "../components/Social Media/SocialMedia.component"
@@ -61,7 +60,6 @@ const Portfolio = () => {
             <MaterialUISwitch onClick={dakrandlight} />
             <Header data={ information } img={headerImage} />
             <Project />
-            <ControlledAccordions />
             <Contact />
             <Footer owner={owner} />
         </Fragment>

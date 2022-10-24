@@ -42,7 +42,7 @@ const Navbar = () => {
                         {/* <XMenu className='x-menu' onClick={navListShow} /> */}
                         <li><a href="/#about" className='nav-link'><About className='nav-svg-link' /> about</a></li>
                         <li><a href="/#project" className='nav-link'><Project className='nav-svg-link' /> project <span>{ projectData.length }</span> </a></li>
-                        <li><a href="/#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li>
+                        {/* <li><a href="/#story" className='nav-link'><Story className='nav-svg-link' /> story</a></li> */}
                         <li><a href="/#contact" className='nav-link'><Contact className='nav-svg-link' /> contact</a></li>
                     </ul>
                     {/* <small>Designed By <i>Ali Reza</i></small> */}
