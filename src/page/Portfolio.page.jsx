@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 
 import BackgroundGradient from '../components/Background Gradient/bgGradient.component'
 import Header from "../components/Header/Header.component"
@@ -15,8 +15,10 @@ import '../components/Light & Dark/light&dark.style.scss'
 
 import HeaderImg from '../assets/header img 2.png'
 import darkHeaderImg from '../assets/dark image.png'
+import useLocalStorage from "../hooks/useLocalStorage"
 
-const Portfolio = () => {
+const Portfolio = () => {   
+    const [darkmode, setDarkmode] = useLocalStorage('darkmode', false);
 
     const information = {
         name: "Ali Reza",
@@ -28,14 +30,18 @@ const Portfolio = () => {
 
     const dakrandlight = (e) => {
         const value = e.target.checked;
-        if (value == true) {
+        value ? setDarkmode(true) : setDarkmode(false);
+    }
+
+    useEffect(()=>{
+        if(darkmode){
             document.body.classList.add('dark')
             setHeaderImage(darkHeaderImg)
-        } else {
+        }else{
             document.body.classList.remove('dark')
             setHeaderImage(HeaderImg)
         }
-    }
+    }, [darkmode])
 
     const owner = 'Ali Reza';
 
