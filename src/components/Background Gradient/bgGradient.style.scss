@@ -15,4 +15,10 @@ div {
             display: none;
         }
     }
+
+    @media (min-width: 1600px) {
+        .bg1 {
+            display: none;
+        }
+    }
 }

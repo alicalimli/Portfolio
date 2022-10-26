@@ -63,5 +63,18 @@
         "img": "https://i.ibb.co/HxqH89s/Nike.png",
         "github": "https://github.com/AliReza1083/First-Project-ZTM",
         "website": "https://adorable-stroopwafel-6c8c08.netlify.app/"
+    },
+    {
+        "id": 6,
+        "params": "gpt-3",
+        "name": "GPT-3",
+        "stacks": ["HTML", "CSS", "JavaScript", "ReactJS"],
+        "technology": "ReactJS",
+        "responsive": true,
+        "path": "/project/gpt-3",
+        "description": "Let’s Build Something amazing with GPT-3 OpenAI",
+        "img": "https://i.ibb.co/HxqH89s/Nike.png",
+        "github": "https://github.com/AliReza1083/GPT-3",
+        "website": "https://polite-beijinho-a7aab7.netlify.app/"
     }
 ]
