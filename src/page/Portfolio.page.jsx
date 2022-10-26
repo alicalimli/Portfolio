@@ -63,7 +63,7 @@ const Portfolio = () => {
             <BackgroundGradient bottom="-100%" right="50%" />
             <BackgroundGradient bottom="-250%" right="90%" hide="hide" />
             <BackgroundGradient bottom="-20%" right="80%" hide="hide" />
-            <MaterialUISwitch onClick={dakrandlight} />
+            <MaterialUISwitch onClick={dakrandlight} defaultChecked={darkmode}/>
             <Header data={ information } img={headerImage} />
             <Project />
             <Contact />
